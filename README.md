@@ -61,3 +61,19 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 "# salcweb" 
+
+# laravel new salcweb --jet
+# cd salcweb
+# npm install && npm run dev
+#
+echo "# salcweb" >> README.md
+# git init
+# git add README.md
+# git commit -m "first commit"
+# git branch -M main
+# git remote add origin https://github.com/cpm1163/salcweb.git
+# git push -u origin main
+# php artisan migrate
+# git add .
+# git commit -m "criação das migrações"
+# git push

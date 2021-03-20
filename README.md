@@ -56,11 +56,31 @@ criar um componente livewire para menu responsivo com tailwind:
 primeiro criar o componente livewire (php artisan make:livewire navigation). É criado em resources\views\livewire\navigation.blade.php. Este comando cria a class em app\Http\Livewire\Navigation.php.
 # php artisan make:livewire navigation
 
+git add .
+git commit -m "Criação migração products+manufacturer"
+git push
+
+Cria o UsersTable livewire
+# php artisan make:livewire UsersTable
+
+[32;1mCLASS:[39;22m app/Http/Livewire/UsersTable.php
+[32;1mVIEW:[39;22m  C:\xampp\htdocs\salcweb\resources\views/livewire/users-table.blade.php
+Abrir os arquivos UsersTable.php e users-table.blade.php
+
+# php artisan make:controller UserController
+
+
+Products
 
 
 
 $ php artisan make:model Stock -m
 $ php artisan make:model Stock_moved -m
+
+
+
+dica usertable git https://github.com/davidgrzyb/laravel-livewire-datatable-example/blob/master/resources/views/users/index.blade.php
+
 
 
 Dica: Se tiver na propriedade o valor do pai, você pode passar parâmetros:

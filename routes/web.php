@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/users', function () {
+    return view('users.index');
+})->name('users.index');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/product', function () {
+    return view('product');
+})->name('product');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
